@@ -587,6 +587,63 @@ nav a:hover {
         display: block;
     }
 }
+
+footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.footer-content strong {
+    color: #00ffff;
+}
+
+.footer-tagline {
+    font-size: 0.9rem !important;
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 20px !important;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.footer-socials .icon a {
+    color: #00ffff;
+    transition: all 0.3s ease;
+}
+
+.footer-socials .icon a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* responsive fix for footer */
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 10px;
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 480px) {
     .logo {
         font-size: 1.2rem;
