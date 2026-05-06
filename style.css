@@ -74,7 +74,22 @@ section {
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px; /* Ensures all cards stay the same height */
+    padding: 30px 20px;
+}
 
+.project-details p {
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.project-details strong {
+    color: #00ffff;
+}
 #home h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
