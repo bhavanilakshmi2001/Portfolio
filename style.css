@@ -430,7 +430,59 @@ footer {
         width: 90%;
     }
 }
+/* Update the Animation to cycle through your 3 main identities */
+@keyframes Changetext {
+    0%, 20% { content: "Java Backend Developer"; }
+    25%, 45% { content: "Spring Boot Enthusiast"; }
+    50%, 70% { content: "Fullstack Developer"; }
+    75%, 95% { content: "API Architect"; }
+    100% { content: "Java Backend Developer"; }
+}
 
+.Changetext::after {
+    content: "Java Backend Developer"; /* Default fallback */
+    animation: Changetext 12s infinite;
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+/* Floating animation for the Hero Image */
+.hero-img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Polishing the social icons */
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links .icon i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #00FFFF;
+}
+
+.social-links .icon i:hover {
+    transform: scale(1.3);
+    color: white;
+}
+
+/* Fix for the view-btn in hero area */
+.hero-cta .view-btn {
+    border-radius: 30px;
+    padding: 12px 25px;
+    background: rgba(0, 255, 255, 0.1);
+}
+
+.hero-cta .view-btn:hover {
+    background: #00FFFF;
+    color: black;
+}
 @media (max-width: 480px) {
     .logo {
         font-size: 1.2rem;
