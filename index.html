@@ -165,6 +165,7 @@
     </footer>
 
     <!-- JavaScript for Mobile Navigation -->
+  
     <script>
         const burger = document.getElementById("burger");
         const nav = document.getElementById("nav-links");
@@ -173,10 +174,14 @@
             nav.classList.toggle("show");
         });
 
-        // Close menu when clicking a link
+        // Close menu and handle active state
         document.querySelectorAll("#nav-links a").forEach(link => {
             link.addEventListener("click", () => {
                 nav.classList.remove("show");
+                // Remove active class from others
+                document.querySelectorAll("#nav-links a").forEach(l => l.classList.remove('active'));
+                // Add to current
+                link.classList.add('active');
             });
         });
     </script>
