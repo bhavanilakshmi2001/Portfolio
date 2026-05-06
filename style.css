@@ -373,6 +373,16 @@ footer {
     height: 3px;
     background-color: #00FFFF;
 }
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Improves readability for longer text */
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+.about strong {
+    color: #00FFFF; /* Highlights your key skills in cyan */
+}
 
 /* ===== Responsive Styles ===== */
 
