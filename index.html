@@ -1,218 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhavani Lakshmi | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhavani Lakshmi | Java Backend Developer</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-   <header>
-    <p class="logo">Bhavani<span>Lakshmi</span></p>
-    
-    <nav id="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <!-- High-visibility button for recruiters -->
-        <a href="mailto:bhavanilakshmi901@gmail.com" class="nav-cta">Hire Me</a>
-    </nav>
+    <header>
+        <p class="logo">Bhavani<span>Lakshmi</span></p>
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="mailto:bhavanilakshmi901@gmail.com" class="nav-cta">Hire Me</a>
+        </nav>
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
 
-    <div class="burger" id="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="section-content hero-container">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="name">Bhavani Lakshmi</span></h1>
+                <h2>I am a <span id="typed"></span></h2>
+                <p class="hero-desc">8 months of experience architecting secure web applications and Zero-Trust cloud architectures.</p>
+                <div class="social-links">
+                    <a href="mailto:bhavanilakshmi901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/bhavanilakshmi2001" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/bhavanilakshmi23" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#projects" class="main-btn">Explore My Work</a>
+            </div>
+            <div class="hero-img-container">
+                <img src="img/undraw_fall_thyk.svg" alt="Developer Illustration" class="hero-img">
+            </div>
+        </div>
+    </section>
 
-  <section id="home">
-    <div class="section-content home">
-        <div>
-            <h1>Hi, I'm <span class="name">Bhavani Lakshmi</span></h1>
-            <!-- The animation will cycle through the roles defined in CSS -->
-            <h2>I am a <span class="Changetext"></span></h2>
-            <p class="social-links">
-                <span class="icon"><a href="mailto:bhavanilakshmi901@gmail.com" title="Email Me"><i class="fa-solid fa-envelope fa-xl"></i></a></span> |
-                <span class="icon"><a href="https://github.com/bhavanilakshmi2001" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-xl"></i></a></span> |
-                <span class="icon"><a href="https://linkedin.com/in/bhavanilakshmi23" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-xl"></i></a></span>
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="view-btn" style="opacity: 1; transform: none; margin-top: 20px;">Explore My Work</a>
-            </div>
-        </div>
-        <!-- Keeping your existing SVG but adding a subtle floating animation via CSS -->
-        <img src="img/undraw_fall_thyk.svg" alt="Backend Developer Illustration" class="hero-img">
-    </div>
-</section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content about-container">
+            <div class="about-img-box">
+                <img src="img/undraw_loving_it_re_jfh4.svg" alt="About Me">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>Dedicated <strong>Java Backend Developer</strong> specializing in building robust, high-performance systems with Spring Boot and MySQL.</p>
+                <p>I have a deep interest in <strong>advanced cryptography</strong> (Paillier) and secure MVC patterns. My goal is to transform complex requirements into scalable, secure digital solutions.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <div class="section-content about">
-        <!-- SVG illustration -->
-        <img src="img/undraw_loving_it_re_jfh4.svg" alt="About Image" />
-        
-        <div>
-            <h2><u>About Me</u></h2>
-            <p>
-                Hi! I'm <strong>Bhavani Lakshmi</strong> 👩‍💻, a dedicated Java Backend Developer with <strong>8 months of hands-on experience</strong> in architecting secure, scalable web applications. 
-            </p>
-            <p>
-                I specialize in building robust backend systems using <strong>Java, Spring Boot, and MySQL</strong>. My technical journey has led me to explore complex domains like <strong>advanced cryptography</strong> (Paillier Cryptosystem) and <strong>Zero-Trust cloud architectures</strong>, ensuring that data integrity and security are never compromised.
-            </p>
-            <p>
-                I am driven by the challenge of transforming complex requirements into clean, high-performance APIs. Whether it's optimizing database queries or implementing secure MVC patterns, I aim for excellence in every line of code. 🧠
-            </p>
-            <p>
-                Let’s collaborate and build something secure and scalable together! 🚀
-            </p>
-        </div>
-    </div>
-</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-content">
+            <h2 class="section-title center">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>Backend</h4>
+                    <ul class="skill-tags">
+                        <li>Java</li><li>Spring Boot</li><li>JSP/Servlets</li><li>REST APIs</li><li>MVC</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>Databases & Tools</h4>
+                    <ul class="skill-tags">
+                        <li>MySQL</li><li>Git/GitHub</li><li>Postman</li><li>Tomcat</li><li>Maven</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Frontend</h4>
+                    <ul class="skill-tags">
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <div class="section-content">
-        <h3><u>Skills</u></h3>
-        <div class="skills-container">
-            <!-- Frontend Category -->
-            <div class="skill-group">
-                <div class="group-header">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Frontend</h4>
-                </div>
-                <ul class="skill-list">
-                    <li>HTML5 & CSS3</li>
-                    <li>Bootstrap 5</li>
-                    <li>JavaScript (ES6+)</li>
-                </ul>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-content">
+            <h2 class="section-title center">Selected Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-box">
+                    <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3>Supermarket Management</h3>
+                    <p>Web-based system for stock tracking and automated invoice generation using MySQL.</p>
+                    <span class="project-tech">JSP • Servlets • MySQL</span>
+                    <a href="https://github.com/bhavanilakshmi2001/SuperMarket-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-box">
+                    <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Library Management</h3>
+                    <p>Centralized database system to manage student issues, book records, and availability.</p>
+                    <span class="project-tech">Java • Apache Tomcat</span>
+                    <a href="https://github.com/bhavanilakshmi2001/Library-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-box">
+                    <div class="project-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Student Management</h3>
+                    <p>Secure platform for student profiles and attendance using DAO layer architecture.</p>
+                    <span class="project-tech">MVC Architecture • MySQL</span>
+                    <a href="https://github.com/bhavanilakshmi2001/Student-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Backend Category -->
-            <div class="skill-group">
-                <div class="group-header">
-                    <i class="fa-solid fa-server"></i>
-                    <h4>Backend</h4>
-                </div>
-                <ul class="skill-list">
-                    <li>Java</li>
-                    <li>Spring Boot</li>
-                    <li>JSP & Servlets</li>
-                    <li>MVC Architecture</li>
-                    <li>RESTful APIs</li>
-                </ul>
-            </div>
+    <footer>
+        <p>&copy; 2026 Bhavani Lakshmi. Engineered with &hearts; in Chennai.</p>
+    </footer>
 
-            <!-- Databases & Tools Category -->
-            <div class="skill-group">
-                <div class="group-header">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <h4>Tools & DB</h4>
-                </div>
-                <ul class="skill-list">
-                    <li>MySQL</li>
-                    <li>Git & GitHub</li>
-                    <li>Postman</li>
-                    <li>Apache Tomcat</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Animation Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Typing Effect
+        new Typed('#typed', {
+            strings: ['Java Backend Developer', 'Security Enthusiast', 'Spring Boot Developer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
 
- <section id="projects">
-        <div class="section-content">
-            <h2><u>Projects</u></h2>
-            <div class="project-grid">
-                
-                <!-- Project 1: Supermarket Management System -->
-                <div class="project-card">
-                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #00ffff; margin-bottom: 20px; display: block;"></i>
-                    <h3>Supermarket Management</h3>
-                    <p>Web-based system for product management, stock tracking, and automated invoice generation.</p>
-                    <div class="project-details" style="text-align: left; font-size: 0.9rem; margin-top: 10px;">
-                        <p><strong>Tech:</strong> JSP, Servlets, MySQL</p>
-                        <p><strong>Key:</strong> CRUD, Billing Module, Purchase Logic</p>
-                    </div>
-                    <a href="https://github.com/bhavanilakshmi2001/SuperMarket-Management-System.git" class="view-btn" target="_blank">View on GitHub</a>
-                </div>
+        // Scroll Reveal
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            reset: false
+        });
+        sr.reveal('.hero-text, .section-title');
+        sr.reveal('.hero-img', { delay: 400, origin: 'right' });
+        sr.reveal('.skill-card', { interval: 200 });
+        sr.reveal('.project-box', { interval: 200 });
 
-                <!-- Project 2: Library Management System -->
-                <div class="project-card">
-                    <i class="fa-solid fa-book-open fa-2xl" style="color: #00ffff; margin-bottom: 20px; display: block;"></i>
-                    <h3>Library Management</h3>
-                    <p>Efficiently manage book records, student issues, and returns with a centralized database.</p>
-                    <div class="project-details" style="text-align: left; font-size: 0.9rem; margin-top: 10px;">
-                        <p><strong>Tech:</strong> Java, JSP, Apache Tomcat</p>
-                        <p><strong>Key:</strong> Issue/Return Tracking, Book Availability</p>
-                    </div>
-                    <a href="https://github.com/bhavanilakshmi2001/Library-Management-System.git" class="view-btn" target="_blank">View on GitHub</a>
-                </div>
-
-                <!-- Project 3: Student Management System -->
-                <div class="project-card">
-                    <i class="fa-solid fa-user-graduate fa-2xl" style="color: #00ffff; margin-bottom: 20px; display: block;"></i>
-                    <h3>Student Management</h3>
-                    <p>A centralized platform for managing student profiles, attendance, and exam performance records.</p>
-                    <div class="project-details" style="text-align: left; font-size: 0.9rem; margin-top: 10px;">
-                        <p><strong>Tech:</strong> Servlets (MVC), DAO Layer, MySQL</p>
-                        <p><strong>Key:</strong> Attendance Tracking, Marks Management</p>
-                    </div>
-                    <a href="https://github.com/bhavanilakshmi2001/Student-Management-System.git" class="view-btn" target="_blank">View on GitHub</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2026 <strong>Bhavani Lakshmi</strong>. Engineered in Chennai, TN.</p>
-        <p class="footer-tagline">Building secure, scalable, and efficient backend systems.</p>
-        
-        <div class="footer-socials">
-            <span class="icon">
-                <a href="mailto:bhavanilakshmi901@gmail.com" title="Email Me">
-                    <i class="fa-solid fa-envelope fa-lg"></i>
-                </a>
-            </span>
-            <span class="icon">
-                <a href="https://github.com/bhavanilakshmi2001" target="_blank" title="GitHub">
-                    <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-            </span>
-            <span class="icon">
-                <a href="https://linkedin.com/in/bhavanilakshmi23" target="_blank" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin fa-lg"></i>
-                </a>
-            </span>
-        </div>
-    </div>
-</footer>
-
- <script href="script.js">
-    const burger = document.getElementById("burger");
-    const nav = document.getElementById("nav-links");
-
-    burger.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
-
-   
-    const navLinks = nav.querySelectorAll("a");
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("show");
-        });
-    });
-</script>
-
-
+        // Mobile Menu
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav-links');
+        burger.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
 </body>
-
 </html>
-
