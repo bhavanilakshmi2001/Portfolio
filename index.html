@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhavani Lakshmi | Java Backend Developer</title>
+    <title>Bhavani Lakshmi | Portfolio</title>
     
-    <!-- Fonts & Icons -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <header>
         <p class="logo">Bhavani<span>Lakshmi</span></p>
+        
         <nav id="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -21,6 +25,7 @@
             <a href="#projects">Projects</a>
             <a href="mailto:bhavanilakshmi901@gmail.com" class="nav-cta">Hire Me</a>
         </nav>
+
         <div class="burger" id="burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -28,136 +33,149 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home">
         <div class="section-content hero-container">
             <div class="hero-text">
                 <h1>Hi, I'm <span class="name">Bhavani Lakshmi</span></h1>
+                <!-- Typed.js will target this span -->
                 <h2>I am a <span id="typed"></span></h2>
-                <p class="hero-desc">8 months of experience architecting secure web applications and Zero-Trust cloud architectures.</p>
+                
                 <div class="social-links">
-                    <a href="mailto:bhavanilakshmi901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://github.com/bhavanilakshmi2001" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/bhavanilakshmi23" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:bhavanilakshmi901@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/bhavanilakshmi2001" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/bhavanilakshmi23" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="#projects" class="main-btn">Explore My Work</a>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="main-btn">Explore My Work</a>
+                </div>
             </div>
             <div class="hero-img-container">
-                <img src="img/undraw_fall_thyk.svg" alt="Developer Illustration" class="hero-img">
+                <img src="img/undraw_fall_thyk.svg" alt="Backend Developer Illustration" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="section-content about-container">
             <div class="about-img-box">
-                <img src="img/undraw_loving_it_re_jfh4.svg" alt="About Me">
+                <img src="img/undraw_loving_it_re_jfh4.svg" alt="About Image" />
             </div>
             <div class="about-text">
                 <h2 class="section-title">About Me</h2>
-                <p>Dedicated <strong>Java Backend Developer</strong> specializing in building robust, high-performance systems with Spring Boot and MySQL.</p>
-                <p>I have a deep interest in <strong>advanced cryptography</strong> (Paillier) and secure MVC patterns. My goal is to transform complex requirements into scalable, secure digital solutions.</p>
+                <p>
+                    Hi! I'm <strong>Bhavani Lakshmi</strong> 👩‍💻, a dedicated Java Backend Developer with <strong>8 months of hands-on experience</strong> in architecting secure, scalable web applications. 
+                </p>
+                <p>
+                    I specialize in building robust backend systems using <strong>Java, Spring Boot, and MySQL</strong>. My technical journey includes exploring <strong>advanced cryptography</strong> and <strong>Zero-Trust architectures</strong>.
+                </p>
+                <p>
+                    I am driven by the challenge of transforming complex requirements into clean, high-performance APIs. Let’s collaborate and build something secure and scalable together! 🚀
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="section-content">
             <h2 class="section-title center">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Frontend</h4>
+                    <ul class="skill-tags">
+                        <li>HTML5 & CSS3</li><li>Bootstrap 5</li><li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
                     <i class="fa-solid fa-server"></i>
                     <h4>Backend</h4>
                     <ul class="skill-tags">
-                        <li>Java</li><li>Spring Boot</li><li>JSP/Servlets</li><li>REST APIs</li><li>MVC</li>
+                        <li>Java</li><li>Spring Boot</li><li>JSP & Servlets</li><li>MVC</li><li>REST APIs</li>
                     </ul>
                 </div>
+
                 <div class="skill-card">
-                    <i class="fa-solid fa-database"></i>
-                    <h4>Databases & Tools</h4>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4>Tools & DB</h4>
                     <ul class="skill-tags">
-                        <li>MySQL</li><li>Git/GitHub</li><li>Postman</li><li>Tomcat</li><li>Maven</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h4>Frontend</h4>
-                    <ul class="skill-tags">
-                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap 5</li>
+                        <li>MySQL</li><li>Git & GitHub</li><li>Postman</li><li>Tomcat</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="section-content">
-            <h2 class="section-title center">Selected Projects</h2>
+            <h2 class="section-title center">Projects</h2>
             <div class="project-grid">
-                <!-- Project 1 -->
                 <div class="project-box">
                     <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                     <h3>Supermarket Management</h3>
-                    <p>Web-based system for stock tracking and automated invoice generation using MySQL.</p>
+                    <p>Web-based system for product management, stock tracking, and automated invoice generation.</p>
                     <span class="project-tech">JSP • Servlets • MySQL</span>
-                    <a href="https://github.com/bhavanilakshmi2001/SuperMarket-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="https://github.com/bhavanilakshmi2001/SuperMarket-Management-System.git" class="project-link" target="_blank">View on GitHub <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
-                <!-- Project 2 -->
+
                 <div class="project-box">
                     <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
                     <h3>Library Management</h3>
-                    <p>Centralized database system to manage student issues, book records, and availability.</p>
-                    <span class="project-tech">Java • Apache Tomcat</span>
-                    <a href="https://github.com/bhavanilakshmi2001/Library-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <p>Efficiently manage book records, student issues, and returns with a centralized database.</p>
+                    <span class="project-tech">Java • JSP • Tomcat</span>
+                    <a href="https://github.com/bhavanilakshmi2001/Library-Management-System.git" class="project-link" target="_blank">View on GitHub <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
-                <!-- Project 3 -->
+
                 <div class="project-box">
                     <div class="project-icon"><i class="fa-solid fa-user-graduate"></i></div>
                     <h3>Student Management</h3>
-                    <p>Secure platform for student profiles and attendance using DAO layer architecture.</p>
-                    <span class="project-tech">MVC Architecture • MySQL</span>
-                    <a href="https://github.com/bhavanilakshmi2001/Student-Management-System.git" target="_blank" class="project-link">Code <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <p>A centralized platform for managing student profiles, attendance, and exam performance records.</p>
+                    <span class="project-tech">Servlets • DAO • MySQL</span>
+                    <a href="https://github.com/bhavanilakshmi2001/Student-Management-System.git" class="project-link" target="_blank">View on GitHub <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Bhavani Lakshmi. Engineered with &hearts; in Chennai.</p>
+        <p>&copy; 2026 <strong>Bhavani Lakshmi</strong>. Built with Java & Passion.</p>
     </footer>
 
-    <!-- Animation Scripts -->
+    <!-- Scripts -->
+    <!-- 1. Typed.js Library -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- 2. ScrollReveal Library -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    
     <script>
-        // Typing Effect
-        new Typed('#typed', {
-            strings: ['Java Backend Developer', 'Security Enthusiast', 'Spring Boot Developer'],
-            typeSpeed: 60,
-            backSpeed: 40,
+        // Typing Animation
+        var typed = new Typed('#typed', {
+            strings: ['Java Backend Developer', 'Spring Boot Enthusiast', 'Security Researcher'],
+            typeSpeed: 50,
+            backSpeed: 30,
             loop: true
         });
 
-        // Scroll Reveal
-        const sr = ScrollReveal({
-            origin: 'bottom',
-            distance: '50px',
-            duration: 1000,
-            delay: 200,
-            reset: false
-        });
-        sr.reveal('.hero-text, .section-title');
-        sr.reveal('.hero-img', { delay: 400, origin: 'right' });
-        sr.reveal('.skill-card', { interval: 200 });
-        sr.reveal('.project-box', { interval: 200 });
+        // Mobile Menu Logic
+        const burger = document.getElementById("burger");
+        const nav = document.getElementById("nav-links");
 
-        // Mobile Menu
-        const burger = document.getElementById('burger');
-        const nav = document.getElementById('nav-links');
-        burger.addEventListener('click', () => nav.classList.toggle('active'));
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('#nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Scroll Animations
+        ScrollReveal().reveal('.hero-text, .about-text', { origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.hero-img, .about-img-box', { origin: 'right', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.skill-card, .project-box', { interval: 200, origin: 'bottom', distance: '30px' });
     </script>
 </body>
 </html>
